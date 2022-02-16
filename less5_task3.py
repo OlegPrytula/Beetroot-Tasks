@@ -6,4 +6,4 @@ while i <= 100:
     if l[i] % 7 == 0 and l[i] % 5 != 0:
         l2.append(i)
     i +=1
-print(l, l2)
+print(l2)
