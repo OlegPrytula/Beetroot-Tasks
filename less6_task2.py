@@ -12,22 +12,20 @@ prices = {
 }
 
 
+def sum_of_values(dictionary1, dictionary2):
+    l1 = []
+    l2 = []
+    l3 = list(dictionary1)
+    for i in dictionary1:
+        l1.append(dictionary1[i])
+    for j in dictionary2:
+        l2.append(dictionary2[j])
+    total = [i*j for i, j in zip(l1, l2)]
+    for i in range(len(total)):
+        print(l3[i], end=' ')
+        print(total[i])
 
-def sum_of_values(dictionary):
-    l = []
-    for i in dictionary:
-        l.append(dictionary[i])
-    print(l)
-    return sum(l)
 
-print(sum_of_values(prices))
-print(sum_of_values(stock))
-# another approach
 
-#
-# def suma(dict1):
-#     values = dict1.values()
-#     return sum(values)
-#
-# print(suma(stock))
-# print(suma(prices))
+
+print(sum_of_values(stock, prices))
